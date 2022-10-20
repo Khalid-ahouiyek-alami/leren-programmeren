@@ -1,6 +1,4 @@
-
-
-name = input("what's your name? ")
+name = input("wat is je naam? ")
 if name == 'John':
     raise NameError('John is not welcome here!')
 gender = input('bent u een man of vrouw? M/V ')                                               # M/V
@@ -12,7 +10,6 @@ elif gender == 'V':
     haar_kleur = input('Draagt u rood krulhaar? J/N ')                                        # J
     haar_lengte = int(input('Hoeveel CM is de lengte uw haar? '))                             # >20
 hoed = input('Heeft u een hoge hoed? J/N ')
-kleur_hoed = input("welke kleur is uw hoed? ")
 rijbewijs = input('Heeft u een geldig Vrachtwagen rijbewijs? J/N ')                           # J
 diploma = input('Heeft u een MBO-4 diploma? J/N ')                                            # J
 lengte = int(input('Wat is uw lengte in CM? '))                                               # >150 and <220 

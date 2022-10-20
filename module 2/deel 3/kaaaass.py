@@ -1,6 +1,3 @@
-from cgi import print_arguments
-
-
 geel = input('is de kaas geel?')
 if geel == 'ja':
     gaten = input('zitten er gaten in?')
@@ -21,7 +18,11 @@ elif geel == 'nee':
     if blauwe_schimmel == 'nee':
         korst = input('heeft de kaas een korst?')
         if korst == 'ja':
-            print('De kaas die jij bedoelt is de Camembert.')
+            ruikt =  input ("Ruikt je kaas")
+            if ruikt == "ja":
+                print("je kaas is camember")
+            elif ruikt == "nee":
+                print(" is het brie")
         elif korst == 'nee':
             print('De kaas die jij bedoelt is de Mozzarella.')
     if blauwe_schimmel == 'ja':
@@ -32,5 +33,5 @@ elif geel == 'nee':
             print("De kaas die jij bedoelt is de Foume d'Ambert.")
 
         
-
+# op de plek camembert als ruikt is het camembert anders brie
         
