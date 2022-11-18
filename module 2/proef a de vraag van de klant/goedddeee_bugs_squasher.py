@@ -28,15 +28,15 @@ if trueOrFalse:
 
 elif not trueOrFalse:
     print('TBH, ik hou niet zo van {}...'.format(favoriteColor))
+
 num1 = random.randint(1, 10)
-
 num2 = random.randint(5, 15)
-try:
 
+try:
     number = int(input(f'En weet jij wat {num1} + {num2} is? '))
 
     if num1 + num2 == number:
-        print('Dat is juist')
+        print('Dat is goed')
 
     else:
         print('Nee dat klopt niet {}'.format(name))
