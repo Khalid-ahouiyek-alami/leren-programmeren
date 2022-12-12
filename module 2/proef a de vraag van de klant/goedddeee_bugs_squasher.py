@@ -25,9 +25,8 @@ trueOrFalse = str(random.randint(0, 1))
 if trueOrFalse:
     print('Ik vind dat ook een mooie kleur!')
 
-
 elif not trueOrFalse:
-    print('TBH, ik hou niet zo van {}...'.format(favoriteColor))
+    print('om eerlijk te zijn ik hou niet zo van {}...'.format(favoriteColor))
 
 num1 = random.randint(1, 10)
 num2 = random.randint(5, 15)
