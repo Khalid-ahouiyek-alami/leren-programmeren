@@ -11,9 +11,11 @@ for y in range(8):
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
-    if y < 7:    #uitleg voor korbijn
+    if y < 7:    #uitleg voor korbijn    
         robotArm.moveLeft()
         robotArm.moveLeft()
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
+# je kan range vergelijken met tuple
+# 

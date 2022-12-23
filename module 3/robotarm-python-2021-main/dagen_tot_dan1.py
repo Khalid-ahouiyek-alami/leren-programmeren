@@ -1,0 +1,1 @@
+dagen_tot_dan= input("tot welke dag wil je dat ik ga weergeven")
