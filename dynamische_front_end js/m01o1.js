@@ -4,8 +4,15 @@ let uitleg = "In een parkeergarage passen 80 auto's op de begane grond en 120 op
 alert(uitleg);
 let gewenste_aantal_autos = prompt("Hoeveel autos wilt u kwijt in de parkeergarage?");
 // Berekenen hier het aantal verdiepingen
+let basis = 80
+let minsom = gewenste_aantal_autos - basis
 
-let antwoord = "Ik heb nog geen idee hoeveel verdiepingen er moeten komen :-( ";
+if (gewenste_aantal_autos > basis){
+    console.log('u heeft', minsom / 120, 'verdiepingen nodig');}
+
+else{
+    console.log('u hebt geen verdiepingen nodig')}
+let; antwoord ="Ik heb nog geen idee hoeveel verdiepingen er moeten komen :-( ";
 document.getElementById("antwoord").innerText = antwoord;
 
 console.log("Om het gewenste aantal autos kwijt te kunnen heb ik x verdiepingen nodig.")
