@@ -1,7 +1,7 @@
 import random 
 
 
-kleur = ("oranje", "blauw", "groen", "bruin") #hier zet hij alle kleuren in de tuple
+kleur = ("oranje", "blauw", "groen", "bruin") # alle kleuren in de tuple
 zak = int(input("Hoeveel m&m's wilt u in de zak")) #hier vraagt hij hoeveel M&M's je wilt
 lijst = [] #dit is een lege lijst waar ze straks allemaaal ingaan
 
