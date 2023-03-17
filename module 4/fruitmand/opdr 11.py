@@ -1,5 +1,6 @@
 from fruitmand import fruitmand
-goeie_kleur= {}
+teller_rond= 0
+teller_niet_rond= 0
 kleuren = {}
 for x in fruitmand:
     kleuren.update ({x.get("color"): x.get("name")})
@@ -16,6 +17,6 @@ while True:
         
         break
 #--------------------------------------------------------------------------#    
-if fruitmand('color') == kleur_keuze:
-    for x in fruitmand:
-        print(fruitmand('round'))
+for fruit in fruitmand:
+    if kleur_keuze:
+        if teller_rond:
