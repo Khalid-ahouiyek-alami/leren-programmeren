@@ -1,0 +1,7 @@
+pseudo code lootjes:
+het program begint met het vragen van 3 namen je moet minimaal 3 namen toevoegen 
+als je 2 keer de zelfde naar er in vult dan moet je een nieuwe naam toevoegen omdat je niet de zelfde mag hebben ingevuld
+ wanneer je 3 unieke namen hebt gevuld dan gaat het programma door dan kom je bij je loten. 
+ik voeg de namen to in een lijst en kopieer deze vervolgens controleer ik of er geen gelijke waarde in de lijsten zitten 
+als dat toch gebeurd dan shuffle je 1 van de lijsten tot het niet meer gelijk is.
+dan print je de lootjes

@@ -1,10 +1,10 @@
 from fruitmand import fruitmand
 teller_rond= 0
 teller_niet_rond= 0
-kleuren = {}
+kleuren = []
 for x in fruitmand:
-    kleuren.update ({x.get("color"): x.get("name")})
-   
+    kleuren.append(x['color'])
+print(kleuren) 
 
 kleur_keuze=input("noem een kleur:  ")
 while True:
