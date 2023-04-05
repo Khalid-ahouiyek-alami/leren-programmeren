@@ -1,17 +1,23 @@
-let opgegeven_cijfer = parseInt(prompt("voer een getal in: "))
-let cijfer_regel = "";
+let hoeveel = parseInt(prompt("voer een getal in: "))
+let mijn_zin = "";
 
-for (let x = 1; x <= opgegeven_cijfer;x++){
+for (let x = 1; x <= hoeveel;x++){
     for (let y = 1; y <= x;y++){
-        cijfer_regel += y + "";
+        if (y > 1){
+            mijn_zin += '-'
+        }
+        mijn_zin += y + "";
     }
-    cijfer_regel += "<br>";
+    mijn_zin += "<br>";
 }
-for (let x = opgegeven_cijfer -1; x >= 1;x--){
+for (let x = hoeveel -1; x >= 1;x--){
     for (let y = 1; y <= x;y++){
-        cijfer_regel += y + "";
+        if (y > 1){
+            mijn_zin += '-'
+        }
+        mijn_zin += y + "";    
     }
-    cijfer_regel += "<br>";
+    mijn_zin += "<br>";
 }
 
-
+document.getElementById("mijn_zin").innerHTML = mijn_zin;
