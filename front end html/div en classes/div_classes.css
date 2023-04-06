@@ -1,0 +1,22 @@
+div.first h2{
+    color:red;
+}
+div.first{
+    background-color: aqua;
+}
+div.second{
+    background-color:peru;
+}
+h2{
+    color: blueviolet;
+}
+html{
+    background-color: wheat;
+}
+body{
+    color:chartreuse;
+}
+div.first  { color: purple; font-style: italic, bold; letter-spacing: 5px; }
+div.first p{
+    padding: 20px;
+}

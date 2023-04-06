@@ -5,8 +5,8 @@ def get_persoon():
 
 alle_mensen = []
 while True:
-    input_str = input("Toets enter om door te gaan of stop om te printen: ")
-    if input_str.lower() == "stop":
+    doorgaan_of_niet = input("Toets enter om door te gaan of stop om te printen: ")
+    if doorgaan_of_niet == "stop":
         break
     persoon = get_persoon()
     alle_mensen.append(persoon)
