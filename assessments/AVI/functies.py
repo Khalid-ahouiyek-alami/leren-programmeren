@@ -42,10 +42,31 @@ def getNumberOfCharacters(text: str) -> int:
 def getNumberOfSentences(text: str) -> int:
     teller = 0
     for x in text:
-        if x == ".":
+        if x == "." or x == "!" or x=="?":
             teller+=1
     return teller
               
 # opdracht 3
 def getNumberOfWords(text: str) -> int:
-    return 0
+    aantal_woorden = len(text.split())
+    return aantal_woorden
+
+
+def AVI_berekener(text:str)-> int:   
+    aantal_zinnen=getNumberOfSentences(text)
+    aantal_woorden=getNumberOfWords(text)
+    G_w_p_z=abs(aantal_zinnen/aantal_woorden)
+    AVI_score=0
+    if G_w_p_z < 7:
+        AVI_score=5
+    elif G_w_p_z==8:
+        AVI_score=6
+    elif G_w_p_z==9:
+        AVI_score=7
+    elif G_w_p_z==10:
+        AVI_score=8
+    elif G_w_p_z==11:
+        AVI_score=11
+    elif G_w_p_z > 11:
+        AVI_score=12
+    return AVI_score
