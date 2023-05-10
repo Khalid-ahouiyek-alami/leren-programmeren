@@ -1,3 +1,5 @@
+
+
 def addition(nummer1: float, nummer2: float) -> float:
     antwoord = nummer1 + nummer2
     return antwoord
@@ -15,14 +17,18 @@ def division(nummer1: float, nummer2: float) -> float:
     return antwoord
 
 def square(nummer1: float) -> float:
-    antwoord = nummer1 * nummer1
+    antwoord = nummer1 ** 2
+    return antwoord
+
+def sqaure_root(nummer1:float) -> float:
+    antwoord =nummer1 ** 0.5 #die 2 sterretjes zijn net als ^....
     return antwoord
 
 
 nummer1 = float(input('welk getal wil je mee beginen'))
 
 while True:
-    choice = input('wat wilt u doen? A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) kwadrateren q|')
+    choice = input('wat wilt u doen? A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) kwadrateren q) sqaure root s)')
     
     if choice == 'a':
         nummer2 = float(input('met welk getal wilt u het vermenigvuldigen'))
@@ -74,7 +80,14 @@ while True:
         print(square(nummer1))
         nummer1 = square(nummer1)
 
+    elif choice == 's':
+        print(sqaure_root(nummer1))
+       
+    
+    
     elif choice == 'i':
+        print("""het je hebt het gestopt
+run het weer opnieuw als je het wilt gebruiken""")
         break
 
 
