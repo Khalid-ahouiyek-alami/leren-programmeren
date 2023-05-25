@@ -1,0 +1,13 @@
+button{
+width: 200px;
+height: 200px;
+background-color: blue;
+color: blanchedalmond;
+font-family: 'top secret stamp';
+}
+
+button:hover{
+background-color: red;
+text-decoration: underline;
+
+}
