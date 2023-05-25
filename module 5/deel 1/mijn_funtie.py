@@ -1,6 +1,5 @@
-
-def mijneerstefuntie():
-    print("hoi mijn funtie werk ;D")
+def mijneerstefuntie():     
+    print("hoi mijn funtie werkt ;D")
 
 
 mijneerstefuntie()
