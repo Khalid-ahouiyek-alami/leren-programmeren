@@ -1,7 +1,8 @@
 import random
-
+import time 
 def start_game():
     print("Welkom to khalid's Blackjack!")
+    time.sleep(2)
     
     player_cards = []
     dealer_cards = []
@@ -12,7 +13,9 @@ def start_game():
         dealer_cards.append(deal_card())
     
     print("jouw kaarten:", player_cards)
+    time.sleep(2)
     print("Dealer's kaarten:", dealer_cards[0])
+    time.sleep(2)
     
     spelers_beurt(player_cards, dealer_cards)
 
