@@ -32,7 +32,7 @@ def to_the_power_of(nummer1:float, nummer2= float) -> float:
 nummer1 = float(input('welk getal wil je mee beginen'))
 
 while True:
-    choice = input('wat wilt u doen?  getallen optellen A) ,  getallen aftrekken B) ,  getallen vermenigvuldigen C),  getallen delen D),  getal ophogen E),  getal F) verlagen, G) getal verdubbelen of H) kwadrateren q) sqaure root s) to_the_power_of p)')
+    choice = input('wat wilt u doen?  getallen optellen A) ,  getallen aftrekken B) ,  getallen vermenigvuldigen C),  getallen delen D),  getal ophogen E),  getal verlagen F) verlagen, G) getal verdubbelen H) kwadrateren q) sqaure root s) to_the_power_of p)')
     
     if choice == 'a':
         nummer2 = float(input('met welk getal wilt u het vermenigvuldigen'))

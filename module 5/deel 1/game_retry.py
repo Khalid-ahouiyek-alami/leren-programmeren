@@ -1,9 +1,34 @@
 import random
 import time 
-def start_game():
-    print("Welkom to khalid's Blackjack!")
-    time.sleep(2)
+
+def deal_card():
+    CARDS = (2, 3, 4, 5, 6, 7, 8, 9, 10, 'king', 'boer', 'queen', 'ace') # kaart (Ace is 11)
+    return random.choice(CARDS)
+
+def calculate_score(hand):
+    # score = sum(hand)
+    score= 0
+        
+    for kaart in hand:
+        if kaart == 'queen':
+            score += 10
+        elif kaart == 'king':
+            score += 10
+        elif kaart == 'boer':
+            score += 10
+        elif kaart == 'ace':
+            score += 11
+        else:
+            score += kaart
     
+
+
+    if score == 21 and len(hand) == 2:
+        return 0  # Blackjack (player wins with 21)
+  # Convert Ace from 11 to 
+    return score
+
+def handel_game():
     player_cards = []
     dealer_cards = []
     
@@ -17,22 +42,6 @@ def start_game():
     print("Dealer's kaarten:", dealer_cards[0])
     time.sleep(2)
     
-    spelers_beurt(player_cards, dealer_cards)
-
-def deal_card():
-    cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]  # kaart (Ace is 11)
-    return random.choice(cards)
-
-def calculate_score(cards):
-    score = sum(cards)
-    if score == 21 and len(cards) == 2:
-        return 0  # Blackjack (player wins with 21)
-    if 11 in cards and score > 21:
-        cards.remove(11)
-        cards.append(1)  # Convert Ace from 11 to 1
-    return score
-
-def spelers_beurt(player_cards, dealer_cards):
     while True:
         choice = input("Do you want to hit or stand? ").lower()
         
@@ -43,7 +52,6 @@ def spelers_beurt(player_cards, dealer_cards):
             score = calculate_score(player_cards)
             if score > 21:
                 print("You went over 21. You lose!")
-                play_again()
                 break
         elif choice == "stand":
             dealer_turn(player_cards, dealer_cards)
@@ -72,14 +80,14 @@ def dealer_turn(player_cards, dealer_cards):
     else:
         print("You win!")
 
-    play_again()
 
-def play_again():
+
+print("Welkom to khalid's Blackjack!")
+time.sleep(2)
+while True:
+    handel_game()
     choice = input("wil je nog een keer spelen? (yes/no) ").lower()
-    
-    if choice == "yes":
-        start_game()
-    else:
-        print("dankjewel voor het spelen")
+    if choice == 'no':
+        break
+print("dankjewel voor het spelen")
 
-start_game()
